@@ -1,0 +1,32 @@
+* {
+  margin: 0px auto;
+}
+
+.container {
+  display: flex;
+}
+
+.registration {
+  width: 550px;
+  display: inline-block;
+  border: 2px solid lightgreen;
+  padding: 20px;
+  margin-right: 35px;
+}
+
+.login {
+  width: 550px;
+  display: inline-block;
+  border: 2px solid lightblue;
+  padding: 20px;
+}
+
+input {
+  width: 90%;
+  padding: 7px 0px;
+  margin: 10px 10px;
+}
+
+button {
+  margin-top: 15px;
+}
