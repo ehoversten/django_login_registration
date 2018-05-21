@@ -25,7 +25,7 @@ class UserManager(models.Manager):
             errors.append("Last name is required")
         if not form['email']:
             errors.append("Email is required")
-        if not form['password']:
+        if not form['user_password']:
             errors.append("Password is required")
         if not form['pass_confirm']:
             errors.append("Confirmation is required")
@@ -51,6 +51,6 @@ class User(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     def __repr__(self):
-        return "<User: {}| {} {} | {} : {}>".format(self.id, self.f_name, self.l_name, self.email, self.password)
+        return "<User: {}| {} {} | {} : {}>".format(self.id, self.f_name, self.l_name, self.email, self.user_password)
 
     objects = UserManager()
