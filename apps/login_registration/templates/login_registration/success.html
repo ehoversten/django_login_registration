@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title><title>Django Login and Registration</title>
+    {% load static %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'login_registration/css/registration_styles.css' %}">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <div class="navbar">
+          <h1>Assignment: Login and Registration with Django</h1>
+        </div>
+      </div>
+      <div class="container">
+        <div class="success">
+          <h1>Success! Welcome, {{ request.session.f_name }}</h1>
+          <h4>Successfully Registered (or logged in)</h4>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
